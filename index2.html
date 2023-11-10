@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 21 JS Assignment 43 to 48 Q.3</title>
+    <h1>Students Record</h1>  
+    <style>
+        table {
+          border-collapse: collapse;
+        }
+    
+        th, td {
+          border: 1px solid black;
+          padding: 8px;
+        }
+    
+        button {
+          background-color: red;
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+      </style>
+      <script>
+        function deleteRow(row) {
+          row.parentNode.parentNode.removeChild(row.parentNode);
+        }
+      </script>     
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Sr. No.</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Class</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+            <th>Sr. No.</th>
+          <td>Ammar</td>
+          <td>18</td>
+          <td>12</td>
+          <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <th>Sr. No.</th>
+          <td>Ahmed</td>
+          <td>17</td>
+          <td>11</td>
+          <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <th>Sr. No.</th>
+            <td>Waqas</td>
+            <td>20</td>
+            <td>09</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+          </tr>
+          <tr>
+            <th>Sr. No.</th>
+            <td>Umair</td>
+            <td>22</td>
+            <td>13</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+          </tr>
+        
+      </table>
+    
+</body>
+</html>
